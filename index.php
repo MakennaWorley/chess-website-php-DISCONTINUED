@@ -10,23 +10,21 @@
 </head>
 <body class="center">
     <h1>Databases Project</h1>
-    <p>This uses way too many buttons but it works</p>
+    <p>Still under major construction</p>
     <nav>
         <ul>
-            <li><a href="#" onclick="hideShow('.mainMenu','.searchMenu');">Search</a></li>
-            <li><a href="#" onclick="hideShow('.mainMenu','.showMenu');">Show</a></li>
-            <li><a href="#" onclick="hideShow('.mainMenu','.addMenu');">Add</a></li>
-            <li><a href="#" onclick="hideShow('.mainMenu','.updateMenu');">Update</a></li>
-            <li><a href="#" onclick="hideShow('.mainMenu','.deleteMenu');">Delete</a></li>
+            <li><a href="#" onclick="hideShow('.searchMenu');">Search</a></li>
+            <li><a href="#" onclick="hideShow('.showMenu');">Show</a></li>
+            <li><a href="#" onclick="hideShow('.addMenu');">Add</a></li>
+            <li><a href="#" onclick="hideShow('.updateMenu');">Update</a></li>
+            <li><a href="#" onclick="hideShow('.deleteMenu');">Delete</a></li>
         </ul>
     </nav>
     <div class="searchMenu"> <!-- This is returning the buttons when the query runs...-->
-        <button onclick="hideShow('.searchMenu', '.mainMenu')">Back</button>
         <button onclick="query('searchPlayerName')">Search Player</button>
         <button onclick="query('searchGameName')">Search Game</button>
     </div>
     <div class="addMenu">
-        <button onclick="hideShow('.addMenu', '.mainMenu')">Back</button>
         <button onclick="query('addPlayer')">Add Player</button>
         <button onclick="query('addPlayerRating')">Add Player Rating</button>
         <button onclick="query('addPlayerClass')">Add Player to Class</button>
@@ -35,7 +33,6 @@
         <button onclick="query('addGame')">Add Game</button>
     </div>
     <div class="showMenu">
-        <button onclick="hideShow('.showMenu', '.mainMenu')">Back</button>
         <button onclick="query('showAllPlayerInformation')">Show All Players</button>
         <button onclick="query('showAllPlayerInClass')">Show All Players in a Class</button>
         <button onclick="query('showMinMaxRating')">Show Rating Range</button>
@@ -43,14 +40,12 @@
         <button onclick="query('showAllGame')">Show All Games</button>
     </div>
     <div class="updateMenu">
-        <button onclick="hideShow('.updateMenu', '.mainMenu')">Back</button>
         <button onclick="query('updatePlayerName')">Update Player's Name</button>
         <button onclick="query('updatePlayerClass')">Update Player's Class</button>
         <button onclick="query('updateClassTeacher')">Update Class's Teacher</button>
         <button onclick="query('updateGameResults')">Update Game Result</button>
     </div>
     <div class="deleteMenu">
-        <button onclick="hideShow('.deleteMenu', '.mainMenu')">Back</button>
         <button onclick="query('deleteTeacher')">Remove Teacher</button>
         <button onclick="query('deleteGame')">Remove Game</button>
     </div>

@@ -2,6 +2,11 @@
 
 /* Things to be added at a later date
  *
+ * Update queries to check conditions, wamp version of MY_SQL doesn't support CHECK
+ * Game- check board letters are Capital letters
+ * Game- check that black and white player are not the same person
+ * Rating- check that rating is greater than 99
+ *
  * UPDATE Player Rating
  * UPDATE Class Level (aka name)
  * REMOVE Player (which means also removing Player from Rating, Class(es), Game)

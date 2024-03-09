@@ -545,12 +545,23 @@ function sendResult(result, letter, number) { //this uses buttons
 }
 
 
-//------------------------------------------------------------------------------functions-----------------------------//
-function hideShow(hideId, showId) {
-    console.log("Hiding: " + hideId);
-    console.log("Showing: " + showId);
-    hideMenu(hideId);
-    showMenu(showId);
+//------------------------------------------------------------------------------hide/show-----------------------------//
+let currentVisibleMenu = null;
+
+function hideShow(showId) {
+    const selectors = ['.searchMenu', '.showMenu', '.addMenu', '.updateMenu', '.deleteMenu'];
+    if (currentVisibleMenu === showId) {
+        console.log("Currently visible: " + currentVisibleMenu);
+        hideMenu(showId);
+        currentVisibleMenu = null;
+    } else {
+        selectors.forEach(selector => {
+            hideMenu(selector);
+        });
+        console.log("Showing: " + showId);
+        currentVisibleMenu = showId;
+        showMenu(showId);
+    }
 }
 
 function showMenu(selector) {
@@ -569,4 +580,12 @@ function hideMenu(selector) {
             element.style.display = "none";
         });
     }
+}
+
+function hideAll() {
+    const selectors = ['.searchMenu', '.showMenu', '.addMenu', '.updateMenu', '.deleteMenu'];
+    selectors.forEach(selector => {
+        hideMenu(selector);
+    });
+    console.log("Hide all");
 }
