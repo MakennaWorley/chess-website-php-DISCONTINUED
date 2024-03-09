@@ -1,15 +1,9 @@
-h1 {
-    text-align: center;
-}
-
-p {
-    text-align: center;
-}
-
+/* custom class */
 .center {
     text-align: center;
 }
 
+/* menu bar */
 .mainMenu {
     text-align: center;
 }
@@ -39,26 +33,12 @@ p {
     display: none;
 }
 
-
-
-
-
-
-
-
-
-
+/* container */
 .button-container {
     text-align: center;
 }
 
-
-
-
-
-
-
-
+/* result */
 #resultTable {
     margin: 20px;
 }

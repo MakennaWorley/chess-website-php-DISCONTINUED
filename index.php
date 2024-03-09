@@ -3,11 +3,10 @@
 <head>
     <title>Databases Project</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="jquery-3.7.1.js"></script>
     <script src="script.js" defer></script>
-    <!-- php include 'query.php'  -->
 </head>
-<body>
+<body class="center">
     <h1>Databases Project</h1>
     <p>This uses way too many buttons but it works</p>
     <div class="mainMenu">
