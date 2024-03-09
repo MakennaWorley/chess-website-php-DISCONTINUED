@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Databases Project</title>
     <link rel="stylesheet" href="styles.css">
     <script src="jquery-3.7.1.js"></script>
@@ -9,14 +11,16 @@
 <body class="center">
     <h1>Databases Project</h1>
     <p>This uses way too many buttons but it works</p>
-    <div class="mainMenu">
-        <button onclick="hideShow('.mainMenu','.searchMenu');">Search</button>
-        <button onclick="hideShow('.mainMenu','.showMenu');">Show</button>
-        <button onclick="hideShow('.mainMenu','.addMenu');">Add</button>
-        <button onclick="hideShow('.mainMenu','.updateMenu');">Update</button>
-        <button onclick="hideShow('.mainMenu','.deleteMenu');">Remove</button>
-    </div>
-    <div class="searchMenu">
+    <nav>
+        <ul>
+            <li><a href="#" onclick="hideShow('.mainMenu','.searchMenu');">Search</a></li>
+            <li><a href="#" onclick="hideShow('.mainMenu','.showMenu');">Show</a></li>
+            <li><a href="#" onclick="hideShow('.mainMenu','.addMenu');">Add</a></li>
+            <li><a href="#" onclick="hideShow('.mainMenu','.updateMenu');">Update</a></li>
+            <li><a href="#" onclick="hideShow('.mainMenu','.deleteMenu');">Delete</a></li>
+        </ul>
+    </nav>
+    <div class="searchMenu"> <!-- This is returning the buttons when the query runs...-->
         <button onclick="hideShow('.searchMenu', '.mainMenu')">Back</button>
         <button onclick="query('searchPlayerName')">Search Player</button>
         <button onclick="query('searchGameName')">Search Game</button>
