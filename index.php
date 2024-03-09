@@ -1,17 +1,27 @@
+<?php
+/*
+ * Do like a landing page for just normal people
+ * Have a login page to actually change the database
+ * Also add a feature for a excel sheet to be read in and database altered accordingly
+*/
+?>
+
 <!doctype html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Databases Project</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="jquery-3.7.1.js"></script>
-    <script src="script.js" defer></script>
+    <title>Oakwood Chess Club Ratings</title>
+    <link rel="stylesheet" href="style/homepage.css">
+    <script src="resources/jquery-3.7.1.js"></script>
+    <script src="javascript/home-query.js" defer></script>
 </head>
 <body class="center">
-    <h1>Databases Project</h1>
-    <p>Still under major construction</p>
-    <nav>
+    <div class="image-container">
+        <h1>Oakwood Chess Club Ratings</h1>
+        <p>Still under major construction</p>
+    </div>
+    <nav class="mainMenu">
         <ul>
             <li><a href="#" onclick="hideShow('.searchMenu');">Search</a></li>
             <li><a href="#" onclick="hideShow('.showMenu');">Show</a></li>
