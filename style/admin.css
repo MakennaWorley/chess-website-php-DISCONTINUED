@@ -25,6 +25,38 @@ p {
 }
 
 /* menu bar */
+.mainMenu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.searchMenu {
+    text-align: center;
+    display: none;
+}
+
+.showMenu {
+    text-align: center;
+    display: none;
+}
+
+.addMenu {
+    text-align: center;
+    display: none;
+}
+
+.updateMenu {
+    text-align: center;
+    display: none;
+}
+
+.deleteMenu {
+    text-align: center;
+    display: none;
+}
+
 .homePage {
     text-align: center;
     display: none;

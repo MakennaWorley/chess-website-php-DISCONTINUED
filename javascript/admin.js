@@ -285,12 +285,10 @@ $(document).ready(function () {
             console.log("No data found in one or all text boxes");
             $("#result").html("Please enter information into all textboxes");
             return;
-        }
-        else if (/^[a-z]$/.test(boardLetter) == false) {
+        } else if (/^[a-z]$/.test(boardLetter) == false) {
             console.log("Invalid boardLetter");
             $("#result").html("Must be a lowercase single letter");
-        }
-        else if (/^[0-9]?[1-9]$/.test(boardNumber) == false) {
+        } else if (/^[0-9]?[1-9]$/.test(boardNumber) == false) {
             console.log("Invalid boardNumber");
             $("#result").html("Must be a number between 1-99");
         }
@@ -352,12 +350,10 @@ $(document).ready(function () {
             console.log("No data found in one or all text boxes");
             $("#result").html("Please enter information into all textboxes");
             return;
-        }
-        else if (/^[a-z]$/.test(boardLetter) == false) {
+        } else if (/^[a-z]$/.test(boardLetter) == false) {
             console.log("Invalid boardLetter");
             $("#result").html("Must be a lowercase single letter");
-        }
-        else if (/^[0-9]?[1-9]$/.test(boardNumber) == false) {
+        } else if (/^[0-9]?[1-9]$/.test(boardNumber) == false) {
             console.log("Invalid boardNumber");
             $("#result").html("Must be a number between 1-99");
         }
@@ -388,12 +384,10 @@ $(document).ready(function () {
             console.log("No data found in one or all text boxes");
             $("#result").html("Please enter information into all textboxes");
             return;
-        }
-        else if (/^[a-z]$/.test(boardLetter) == false) {
+        } else if (/^[a-z]$/.test(boardLetter) == false) {
             console.log("Invalid boardLetter");
             $("#result").html("Must be a lowercase single letter");
-        }
-        else if (/^[0-9]?[1-9]$/.test(boardNumber) == false) {
+        } else if (/^[0-9]?[1-9]$/.test(boardNumber) == false) {
             console.log("Invalid boardNumber");
             $("#result").html("Must be a number between 1-99");
         }
