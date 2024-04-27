@@ -13,15 +13,23 @@
  * REMOVE Class (requires a removeAll function...)
 */
 
-$user = 'root';
-$password = '[CSQ*UkLvNVH2m90';
-$database = 'chesswebsite';
+$user = 'website';
+$password = '123';
+$database = 'chessdatabase';
+$host = 'localhost:8889';
+$port = 3306;
+
+$dsn = "mysql:host=$host;dbname=$database;port=$port;charset=utf8mb4";
+
+$options = [
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+];
 
 try {
-    $pdo = new PDO("mysql:host=localhost;charset=utf8mb4;dbname=$database", $user, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $pdo = new PDO($dsn, $user, $password, $options);
 } catch (PDOException $e) {
-    die('Connection failed: ' . $e->getMessage());
+    die('Connect Error (' . $e->getMessage() . ')');
 }
 
 //------------------------------------------------------------------------------action switch-------------------------//
